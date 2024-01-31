@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sigmarone/v15/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
+}
+body {
+  background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  overflow: hidden;
+}
+.congrats {
+  position: absolute;
+  top: 140px;
+  width: 550px;
+  height: 100px;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.congrats h1 {
+  transform-origin: 50% 50%;
+  font-size: 50px;
+  font-family: 'Sigmar One', cursive;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+.blob {
+  height: 50px;
+  width: 50px;
+  color: #ffcc00;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 1;
+  font-size: 30px;
+  display: none;
+}
+
+
+button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     hsl(340deg 100% 16%) 0%,
+     hsl(340deg 100% 32%) 8%,
+     hsl(340deg 100% 32%) 92%,
+     hsl(340deg 100% 16%) 100%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ button:hover {
+  filter: brightness(110%);
+ }
+ 
+ button:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ button:focus:not(:focus-visible) {
+  outline: none;
+ }
+
+ button {
+  margin-top: 220px;
+ }

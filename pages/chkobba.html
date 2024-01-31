@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHKOBBA</title>
+    <link rel="stylesheet" href="../css/chkobba.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+    <img src="../images/music2.gif" alt="" id="music-logo" onclick="displaymusic()">
+    <div id="musique">
+        <div id="fermer" onclick="hidemusic()"><img src="../images/left.png" alt=""></div>
+        <div class="titres">
+            <div class="titreMusic">
+                <p>Zied Gharsa<br><span style="color: red;">Alech thayer fiya</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/ZiedGharsa.mp3","morceau1")'>ECOUTER</button>
+                    <div class="music" id="morceau1">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="titreMusic">
+                <p>Om Kolthoum<br><span style="color: red;">Enta Omry</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/Omkolthoum.mp3","morceau2")'>ECOUTER</button>
+                    <div class="music" id="morceau2">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="titreMusic">
+                <p>Mohamed Jamousi<br><span style="color: red;">Kahweji Ydour</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/MohamedJammousi.mp3","morceau3")'>ECOUTER</button>
+                    <div class="music" id="morceau3">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="titreMusic">
+                <p>Hedi Jouini<br><span style="color: red;">Taht el yessmina</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/HediJouini.mp3","morceau4")'>ECOUTER</button>
+                    <div class="music" id="morceau4">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="titreMusic">
+                <p>Hedi Jouini<br><span style="color: red;">Alik Nghani</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/HediJouini1.mp3","morceau5")'>ECOUTER</button>
+                    <div class="music" id="morceau5">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="titreMusic">
+                <p>Ali Riahi<br><span style="color: red;">Bit Chaar</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/AliRiahi.mp3","morceau6")'>ECOUTER</button>
+                    <div class="music" id="morceau6">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titreMusic">
+                <p>Oulaya<br><span style="color: red;">Alif ya soltani</span></p>
+                <div class="box">
+                    <button class="button" onclick='playMusic("../sounds/Oulaya.mp3","morceau7")'>ECOUTER</button>
+                    <div class="music" id="morceau7">
+                      <span class="soundwave" style="--i: 12"></span>
+                      <span class="soundwave" style="--i: 31"></span>
+                      <span class="soundwave" style="--i: 25"></span>
+                      <span class="soundwave" style="--i: 18"></span>
+                      <span class="soundwave" style="--i: 11"></span>
+                      <span class="soundwave" style="--i: 23"></span>
+                      <span class="soundwave" style="--i: 16"></span>
+                      <span class="soundwave" style="--i: 34"></span>
+                      <span class="soundwave" style="--i: 19"></span>
+                      <span class="soundwave" style="--i: 14"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="pauseplay">
+            <label class="container">
+                  <input id="PPbutton" type="checkbox" oninput="pauseplay(this.checked)">
+                  <svg viewBox="0 0 384 512" height="1.5em" xmlns="http://www.w3.org/2000/svg" class="play"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg>
+                  <svg viewBox="0 0 320 512" height="1.5em" xmlns="http://www.w3.org/2000/svg" class="pause"><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"></path></svg>
+            </label>
+        </div>
+
+        <label class="slider">
+            <input type="range" class="level" oninput="changeVolume(this.value)">
+            <svg class="volume" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                <g>
+                    <path d="M18.36 19.36a1 1 0 0 1-.705-1.71C19.167 16.148 20 14.142 20 12s-.833-4.148-2.345-5.65a1 1 0 1 1 1.41-1.419C20.958 6.812 22 9.322 22 12s-1.042 5.188-2.935 7.069a.997.997 0 0 1-.705.291z" fill="currentColor" data-original="#000000"></path>
+                    <path d="M15.53 16.53a.999.999 0 0 1-.703-1.711C15.572 14.082 16 13.054 16 12s-.428-2.082-1.173-2.819a1 1 0 1 1 1.406-1.422A6 6 0 0 1 18 12a6 6 0 0 1-1.767 4.241.996.996 0 0 1-.703.289zM12 22a1 1 0 0 1-.707-.293L6.586 17H4c-1.103 0-2-.897-2-2V9c0-1.103.897-2 2-2h2.586l4.707-4.707A.998.998 0 0 1 13 3v18a1 1 0 0 1-1 1z" fill="currentColor" data-original="#000000"></path>
+                </g>
+            </svg>
+        </label>
+
+    </div>
+
+
+
+    <img src="../images/delete_this_card_fro-removebg-preview.png" alt="" class="coffee">  
+    <img src="../images/tapis.png" alt="" class="tapis">
+    <p id="nbrestantes">il reste 40 cartes</p>
+    <div class="CartesRestantes" id="CartesRestantes">
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card" >
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="joueur1" id="joueur1">
+
+        </div>
+        <div class="table" id="table">
+
+        </div>
+        <div class="joueur2" id="joueur2">
+            
+        </div>
+    </div>
+
+    <button class="gamebuttons" id="Manger">Manger</button>
+    <button class="gamebuttons" id="Jeter">Jeter</button>
+
+    <div id="cartesMangees">
+        <div id="j1mangees">
+            <p style="text-align: center;" class="mangertitre">Cartes prises par l'ordinateur</p>
+            <p id="totalJ1" style="position: absolute; bottom: 0; text-align: center;"></p>
+        </div>
+        <div id="j2mangees">
+            <p  style="text-align: center;" class="mangertitre">Cartes prises par joueur2</p>
+            <p id="totalJ2" style="position: absolute; bottom: 0; text-align:center;"></p>
+        </div>
+    </div>
+
+    <div id="surpriseText" class="surprise-text">Chkobba!</div>
+    <div id="triste" class="triste"><img src="../images/crying.gif"></div>
+
+    <script src="../js/chkobba.js"></script>
+</body>
+</html>

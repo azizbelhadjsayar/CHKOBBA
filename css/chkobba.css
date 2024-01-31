@@ -1,0 +1,653 @@
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/KdamThmorPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: myfont1;
+  src: url(../fonts/LuckiestGuy-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: myfont;
+    font-weight: 600
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/0101.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:110%;
+    color: white;
+    font-size: 18px;
+}
+
+
+.coffee {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.tapis {
+    position: absolute;
+    z-index: -10;
+    width: 250px;
+    top: 35%;
+    left: 2%;
+}
+
+.CartesRestantes {
+    height: 100%;
+    /* background-color: antiquewhite; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    width: 60%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+
+#music-logo {
+    position: absolute;
+    width: 150px;
+    left: 5vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+#musique {
+    left: -400px;
+    z-index: 100;
+    position: absolute;
+    width: 400px;
+    height: 90vh;
+    background-color: #c9bd8f;
+    margin-top: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y:scroll;
+    overflow-x: hidden; */
+/* From https://css.glass */
+background: rgba(212, 223, 155, 0.52);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+margin-top: 40px;
+}
+
+.titres {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80%;
+  width: 98%;
+  margin-top: 75px;
+  scrollbar-width:50px;
+  scrollbar-color: transparent;
+  margin-right: 20px;
+}
+
+.titres::-webkit-scrollbar {
+  width: 5px;
+}
+
+.titres::-webkit-scrollbar-thumb {
+  background-color: rgb(97, 64, 17);
+  border-radius: 10px;
+}
+
+#fermer{
+    width: 50px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(../images/left.png);
+}
+
+#fermer img{
+  width: 50px;
+}
+
+/* .titreMusic:nth-child(2) {
+  margin-top: 75px;
+  z-index: -20;
+} */
+
+.slider {
+    /* slider */
+    --slider-width: 100%;
+    --slider-height: 6px;
+    --slider-bg: rgb(0, 0, 0);
+    --slider-border-radius: 999px;
+    /* level */
+    --level-color: #fff;
+    --level-transition-duration: .1s;
+    /* icon */
+    --icon-margin: 15px;
+    --icon-color: var(--slider-bg);
+    --icon-size: 25px;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: -30px;
+    margin-bottom: 20px;
+  }
+  
+  .slider {
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .slider .volume {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: var(--icon-margin);
+    color: var(--icon-color);
+    width: var(--icon-size);
+    height: auto;
+  }
+  
+  .slider .level {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    background: var(--slider-bg);
+    overflow: hidden;
+    border-radius: var(--slider-border-radius);
+    -webkit-transition: height var(--level-transition-duration);
+    -o-transition: height var(--level-transition-duration);
+    transition: height var(--level-transition-duration);
+    cursor: inherit;
+  }
+  
+  .slider .level::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    -webkit-box-shadow: -200px 0 0 200px var(--level-color);
+    box-shadow: -200px 0 0 200px var(--level-color);
+  }
+  
+  .slider:hover .level {
+    height: calc(var(--slider-height) * 2);
+  }
+
+
+
+@keyframes Ouvrir {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(400px);
+	}
+}
+
+@keyframes Fermer {
+	0% {
+		transform: translateX(400px);
+	}
+
+	100% {
+		transform: translateX(-400px);
+	}
+}
+
+.table {
+    height: 50%;
+}
+
+.card {
+    width: 100px;
+    height: 147px;
+    position: absolute;
+    perspective: 1000px;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    background: linear-gradient(135deg, transparent 15px, rgba(0, 0, 0, 0.3) 15px),
+                  linear-gradient(-135deg, transparent 15px, rgba(0, 0, 0, 0.3) 15px);
+}
+
+
+/* CHKOBBAAAAA POP UP */
+.surprise-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c92020;
+    padding: 10px 20px;
+    border-radius: 25px;
+    opacity: 0;
+    background-image: url("../images/giphy.gif");
+    animation: fadeInOut 1.5s ease-in-out forwards;
+    display: none; /* Initially hidden */
+    width: 60%;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+  }
+
+  .triste {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    animation: fadeInOut 1.5s ease-in-out forwards;
+    display: none;
+    width: 60%;
+    text-align: center;
+  }
+
+  .triste img {
+    width: 60%;
+  }
+/* CHKOBBAAAAA POP UP */
+
+
+
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1s;
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.joueur1, .joueur2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+
+
+#nbrestantes {
+    position: absolute;
+    text-align: center;
+    top: 26%;
+    left: 1.5%;
+    font-size: 30px;
+    color: #c9bd8f;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cartesMangees {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#j1mangees {
+    height: 90%;
+    width: 45%;
+    position: relative;
+    border: 4px solid rgb(9, 10, 10);
+    border-radius: 12px;
+}
+
+#j2mangees {
+    height: 90%;
+    width: 45%;
+    position: relative;
+    border: 4px solid rgb(9, 10, 10);
+    border-radius: 12px;
+}
+
+#j1mangees > p, #j2mangees > p {
+  color: #c9bd8f;
+  background-color: rgb(19, 18, 18);
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 10px 10px;
+  padding: 8px 10px;
+}
+
+
+.selected {
+    filter: brightness(0.4);
+    transform: translateY(-18px);;
+    transition: transform 0.5s ease;
+}
+
+.unselected {
+    filter: brightness(1);
+    transform: translateY(0px);;
+    transition: transform 0.5s ease;
+}
+
+.ajouterJ1 {
+    transform: translate(480px,-250px);;
+    transition: transform 0.2s ease;    
+}
+
+.ajouterJ2 {
+    transform: translate(480px,250px);;
+    transition: transform 0.2s ease;    
+}
+
+.ajouterTABLE {
+    transform: translate(500px,10px);
+    transition: transform 0.3s ease;    
+}
+
+#Manger {
+    position:absolute;
+    top: 80%;
+    left: 62%;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+}
+
+#Jeter {
+    position:absolute;
+    top: 90%;
+    left: 62%;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+}
+.table {
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+
+
+
+
+#Manger, #Jeter {
+    background: #FBCA1F;
+    font-weight: 900;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+  }
+  
+  #Manger:hover, #Jeter:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  #Manger:active, #Jeter:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+
+
+
+  .titreMusic {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    border-radius: 10px; 
+    padding: 10px 5px;
+    margin: 0px 15px 15px 20px;
+    background: #eadfaa;
+    z-index: -2;
+  }
+  
+
+  .box {
+    --clr-shadow__border: #756334;
+    --clr-text: #F6F4EB;
+    --clr-soundwave: #f1ae13;
+    --clr-music: #4f2a09;
+    --size: 3rem;
+    position: relative;
+    width: 140px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  
+  .button {
+    border-radius: 10px;
+    right: 0;
+    width: 140px;
+    height: 50px;
+    margin-right: 20px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-text);
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),-2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+  }
+  
+  .music {
+    z-index: -1;
+    border-radius: 10px;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    bottom: 0%;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: var(--clr-music);
+  }
+  
+  .box:hover .music {
+    opacity: 1;
+  }
+
+  .activeMusic {
+    opacity: 1;
+  }
+  
+  .soundwave {
+    width: 100%;
+    border: 1px solid var(--clr-music);
+    border-bottom: none;
+    background: linear-gradient(to top, var(--clr-soundwave) 70%, var(--clr-music));
+    animation: music-animation calc(0.03s * var(--i)) linear infinite;
+    opacity: 1;
+  }
+
+  
+  @keyframes music-animation {
+    0%, 100% {
+      height: calc(0.06rem * var(--i));
+    }
+  
+    10% {
+      height: calc(0.04rem * var(--i));
+    }
+  
+    20% {
+      height: calc(0.05rem * var(--i));
+    }
+  
+    30% {
+      height: calc(0.01rem * var(--i));
+    }
+  
+    40% {
+      height: calc(0.07rem * var(--i));
+    }
+  
+    50% {
+      height: calc(0.04rem * var(--i));
+    }
+  
+    60% {
+      height: calc(0.08rem * var(--i));
+    }
+  
+    70% {
+      height: calc(0.06rem * var(--i));
+    }
+  
+    80% {
+      height: calc(0.09rem * var(--i));
+    }
+  
+    90% {
+      height: calc(0.05rem * var(--i));
+    }
+  }
+  
+
+
+  /*------ Settings ------*/
+  #pauseplay {
+      right: 0;
+      width: 100%;
+      margin-top: 35px;
+      margin-bottom: 20px;
+  }
+
+  .container {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+    right: 0;
+  }
+  
+  .container .play {
+    fill: black;
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .container .pause {
+    fill: black;
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+  
+  /* ------ On check event ------ */
+  .container input:checked ~ .play {
+    display: none;
+  }
+  
+  .container input:checked ~ .pause {
+    display: block;
+  }
+  
+  /* ------ Hide the default checkbox ------ */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-180deg) scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: rotate(-10deg) scale(1.2);
+    }
+  }
+
+  .titreMusic p, .titreMusic>p>span {
+    color: black;
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 18px;
+    font-family:myfont1;
+  }
+
+
+  
+  
+  
+  

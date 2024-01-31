@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCORE DE LA MANCHE</title>
+  <link rel="stylesheet" href="../css/score.css">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body style="height: 115vh;">
+  <h1 style="margin-top: 40px;"><span>"SCORE</span><span> MANCHE"</span></h1>
+  <div class="tableScore">
+    <table class="tg" style="table-layout: fixed; width: 493px; margin-top: 50px;">
+      <colgroup>
+      <col style="width: 150px">
+      <col style="width: 300px">
+      <col style="width: 300px">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-9wq8" style="border: none;"></th>
+          <th class="tg-iai6" style="border: 3.5px solid black; font-weight: 1600; color: rgb(17, 73, 179);">ORDINATEUR</th>
+          <th class="tg-iai6" id="j2name" style="border: 3.5px solid black; font-weight: 1600; color: rgb(17, 73, 179);"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-iai6" style="border: 3.5px solid black;">CHKOBBA</td>
+          <td class="tg-zg96" id="j1chkobba"></td>
+          <td class="tg-zg96" id="j2chkobba"></td>
+        </tr>
+        <tr>
+          <td class="tg-iai6" style="border: 3.5px solid black;">KARTA</td>
+          <td class="tg-zg96" id="j1karta"></td>
+          <td class="tg-zg96" id="j2karta"></td>
+        </tr>
+        <tr>
+          <td class="tg-iai6" rowspan="2" style="border: 3.5px solid black;">DINARI</td>
+          <td class="tg-9wq8" id="j1dinaricartes"></td>
+          <td class="tg-9wq8" id="j2dinaricartes"></td>
+        </tr>
+        <tr>
+          <td class="tg-zg96" id="j1dinari"></td>
+          <td class="tg-zg96" id="j2dinari"></td>
+        </tr>
+        <tr>
+          <td class="tg-iai6" rowspan="2" style="border: 3.5px solid black;">BERMILA</td>
+          <td class="tg-9wq8" id="j1bermilacartes">
+            <div id="7j1">
+
+            </div>
+            <div id="6j1">
+
+            </div>
+          </td>
+          <td class="tg-9wq8" id="j2bermilacartes">
+            <div id="7j2">
+
+            </div>
+            <div id="6j2">
+
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-zg96" id="j1bermila"></td>
+          <td class="tg-zg96" id="j2bermila"></td>
+        </tr>
+        <tr>
+          <td class="tg-iai6" rowspan="2"  style="border: 3.5px solid black">7 EL HAYA </td>
+          <td class="tg-9wq8" id="j1hayacartes"></td>
+          <td class="tg-9wq8" id="j2hayacartes"></td>
+        </tr>
+        <tr>
+          <td class="tg-zg96" id="j1haya"></td>
+          <td class="tg-zg96" id="j2haya"></td>
+        </tr>
+        <tr>
+          <td class="tg-l2vm">Total points</td>
+          <td class="tg-sjze" id="j1totalmanche"></td>
+          <td class="tg-sjze" id="j2totalmanche"></td>
+        </tr>
+      </tbody>
+      </table>
+      <div class="card">
+        <h2 style="text-align: center; font-size: 42px; color: bisque; margin-bottom: 10px; margin-top: 10px;">Score total du jeu</h2>
+        <div class="totalbox">
+          <div class="ordinateur">
+            <h3 class="scorenom">Ordinateur</h3>
+            <div id="score1"></div>
+          </div>
+          <div class="joueur">
+            <h3 class="scorenom" id="scoreNom"></h3>
+            <div id="score2"></div>
+          </div>
+        </div>
+        <button id="continuer" onclick="continuer()">Continuer</button>
+      </div>
+  </div>
+  <div class="Cartes" id="Cartes">
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+  </div>
+  <script src="../js/score.js"></script>
+</body>
+</html>
